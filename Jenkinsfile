@@ -1,3 +1,4 @@
+#!groovy
 pipeline {
   agent any
 
@@ -20,7 +21,7 @@ pipeline {
     }
     stage('run') {
       steps {
-        sh 'java -jar rectangle.jar 7 9'
+        sh 'java -jar rectangle.jar 9 9'
       }
     }
     stage('Promote Development to Master') {
